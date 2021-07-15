@@ -1,0 +1,25 @@
+body{
+    font-size: 90%;
+}
+.borderline{
+    border: 2px solid black;
+    background-color: #5f5f5f;
+}
+.edit{
+    background-color: aqua;
+}
+table,td,th{
+    border: 1px solid #5f5f5f;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px 15px;
+}
+ th{
+    background-color: #cacaca;
+} 
+tr:nth-child(even) td {
+    background-color: #e0e0e0 ; 
+}
+tr:nth-child(odd) td{
+    background-color:#f1f1f1 ;
+}
