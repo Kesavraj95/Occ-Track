@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.4/knockout.validation.min.js"></script>
+   
+    
+    <link rel="stylesheet" href="/week 3/formvalidationknockoutjs/css/style.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" >
+        <h2 class="text-center">Basic Form</h2>
+
+        <form data-bind="submit:Submit">
+
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" class="form-control" data-bind="value:firstName" 
+                placeholder="Enter first name" name="firstname">
+            </div>
+            <div class="form-group">   
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control"  data-bind="value:lastName " 
+                placeholder="Enter last name" name="lastname">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" data-bind="value:gender">
+                    <option value="" name="gender">Select</option>
+                    <option value="male" name="gender">Male</option>
+                    <option value="female" name="gender">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" 
+                data-bind="value:emailaddress" placeholder="Enter Email" name="email" >
+            </div>
+            <div class="form-group">
+                    <label> Course1<input type="checkbox"  data-bind="checked:course" 
+                        name="course" value="courseOne"></label> <br>
+                    <label>Course2<input type="checkbox"  data-bind="checked:course"
+                        name="course" value="courseTwo"> </label>         
+            </div>    
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+    </div>
+    <script src="/week 3/formvalidationknockoutjs/js/app.js"></script>
+</body>
+
+</html>

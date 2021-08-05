@@ -1,0 +1,29 @@
+body{
+    background-color: #77a6f7;
+}
+.container{
+    max-width: 768px;
+    border: 1px solid black;
+    margin-top: 40px;
+    padding: 0px !important;
+    background-color: #D3e3fc;;
+}
+h2{
+    background-color: #00887A;
+    padding: 30px;
+    color: #feffff !important;
+    margin: 0;
+   }
+form{
+    margin: 20px;
+    padding: 10px;
+}
+.validationMessage{
+    color:red;
+}
+.btn{
+    width: 25%
+}
+
+
+
